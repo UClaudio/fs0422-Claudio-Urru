@@ -1,0 +1,38 @@
+div {
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+div ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    
+}
+
+img {
+    border-radius: 50%;
+}
+
+li {
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+li abbr {
+    display: flex;
+    justify-content: center;
+}
+
+#frase {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}
