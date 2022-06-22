@@ -1,8 +1,140 @@
 /* IMPOSTAZIONI GENERALI */
+html{
+    font-family: 'Raleway', sans-serif;
+    width: 450px;
+    margin: 0px;
+}
 
+strong {
+    font-weight: 500;
+    color: #00a0c6;
+}
+
+body{
+    width: 450px;
+}
 /* HEADER */
 
+header {
+    text-align: center;
+    background-color: #00a0c6;
+    width: 450px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 35px;
+
+}
+
+
+header h1 span{
+    background-color: white;
+    text-align: center;
+    color: #00a0c6;
+
+}
+
+header h2 {
+    font-weight: 500;
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+
+#hrhead { 
+    border: 0; border-top: 6px solid #027794; 
+    padding: 0;
+    margin: 0;
+}
+
+
+
 /* MAIN */
+
+main h2 {
+    color: #027794;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+figure {
+    text-align: center;
+
+}
+
+figure img {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+figure figcaption{
+    font-weight: 600;
+}
+
+.pad {
+    padding-left: 15px;
+}
+
+address b {
+    font-weight: bold;
+}
+
+address a {
+    color: red;
+}
+
+#info {
+    font-weight: bold;
+    line-height: 60px;
+}
+
+blockquote {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+
+    width: 420px;
+}
+
+blockquote p {
+    margin-left: 25px;
+    background-color: rgb(223, 219, 219);
+    padding: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    padding-bottom: 50px;
+    font-style: italic;
+}
+
+.par {
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.pad h3 {
+    font-weight: 600;
+}
+
+.dotted {
+    width: 90%;
+    border: 1px;
+    border-style: none none dashed;
+    color: grey
+}
+
+ul {
+    list-style-type: none;
+}
 
 /* ELEMENTI NEL MAIN */
 
