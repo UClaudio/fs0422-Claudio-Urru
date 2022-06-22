@@ -2,7 +2,7 @@
 html{
     font-family: 'Raleway', sans-serif;
     width: 450px;
-    margin: 0px;
+    scroll-margin-right: 0px;
 }
 
 strong {
@@ -11,14 +11,14 @@ strong {
 }
 
 body{
-    width: 450px;
+    width: 100%;
 }
 /* HEADER */
 
 header {
     text-align: center;
     background-color: #00a0c6;
-    width: 450px;
+    width: 100%;
     font-size: 25px;
     letter-spacing: 1px;
 }
@@ -59,11 +59,13 @@ header h2 {
 
 main h2 {
     color: #027794;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
-    line-height: 60px;
-    font-weight: 600;
+    line-height: 80px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    text-shadow: 1px 0px 1px#027794;
 }
 
 figure {
@@ -74,33 +76,50 @@ figure {
 figure img {
     border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 10px;
+    height: 200px;
+    width: 80%;
 }
 
 figure figcaption{
     font-weight: 600;
+    line-height: 60px;
+    font-size: 21px
 }
 
 .pad {
     padding-left: 15px;
 }
 
+address img {
+    height: 25px;
+    width: 25px;
+    padding: 0px;
+}
+
 address b {
     font-weight: bold;
+    font-size: 25px;
+    line-height: 40px;
 }
 
 address a {
-    color: red;
+    color: #ce6054;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 2px solid #ce6054;
 }
 
 #info {
     font-weight: bold;
-    line-height: 60px;
+    line-height: 90px;
+    font-size: 24px;
 }
 
 blockquote {
     text-align: center;
-    font-size: 19px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
 
     width: 420px;
 }
@@ -113,12 +132,14 @@ blockquote p {
     border-radius: 20px;
     padding-bottom: 50px;
     font-style: italic;
+    font-weight: 600;
 }
 
 .par {
     line-height: 30px;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 500;
+    width: 90%;
 }
 
 .pad h3 {
