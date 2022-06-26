@@ -11,10 +11,33 @@ h1,h2,h3,h4,h5 {
     line-height: 1.5;
 }
 img {
-    max-width: 100vw;
+    
+
 }
+
 img, figure {
     max-width: 1000px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: rgb(189, 185, 185); 
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #393d41;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #777e85;
 }
 
 /* header */
@@ -51,6 +74,14 @@ header a {
     border-radius: 5px;
     margin-top: 50px;
     text-decoration: none;
+    transition: 0.3s;
+}
+header a:hover {
+    border: 1px solid #f04c2f;
+    background-color: white;
+    color: #f04c2f;
+    transition: 0.2s;
+
 }
 header h1 {
     font-size: 2.6rem;
@@ -60,7 +91,7 @@ header h1 {
     line-height: 1;
 }
 header p {
-    width: 70%;
+    width: 72%;
     display: block;
     margin: auto;
     margin-bottom: 10%;
@@ -93,6 +124,7 @@ main section {
     color: white;
         
 }
+
 main section h4, h3 {
     color: white;
 }
@@ -188,13 +220,29 @@ footer div a, footer div p {
     display: inline;
 }
 footer div i {
-    margin-right: 5px;
-    font-size: 1.2rem;
+    margin-right: 6px;
+    font-size: 1.3rem;
 }
 footer p {
     font-size: 1.2rem;
     padding-bottom: 4.5rem;
 }
+
 footer p a {
     display: inline-block;
+}
+footer span {
+    display: inline-block;
+    height: 10px;
+    width: 55%;
+    border-bottom: 1px solid white;
+    margin: 1rem 0 2rem 0;
+}
+/* linea bianca con il bordo superiore dell'ultimo p */
+#whiteline {
+    display: inline-block;
+    border-top: 1px solid white;
+    padding-top: 50px;
+    width: 16rem;
+    margin-top: 2rem;
 }
