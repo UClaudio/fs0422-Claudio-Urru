@@ -1,0 +1,42 @@
+@media screen and (min-width: 500px) {
+
+    header div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #correlati {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #correlati div {
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    #correlati {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #correlati div {
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        gap: 3rem;
+    }
+
+    #correlati {
+        width: 300px;
+    }
+
+}

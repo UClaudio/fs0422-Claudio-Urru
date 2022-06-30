@@ -1,0 +1,60 @@
+body {
+    font-family: 'Indie Flower';
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-content: space-around;
+    background-color: #666666;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.postit {
+    width: 20%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 6px 15px -1px #000000, inset 0px -37px 50px -23px rgba(0,0,0,0.5);
+    font-size: 60px;
+    font-weight: bold;
+    flex-direction: column;
+    transition: 0.5s;
+    
+}
+
+.postit p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.postit:nth-of-type(1), #seconda .postit:nth-of-type(3) {
+    background: linear-gradient(to bottom, #fdfdcb, #bdbda3);
+    transform: rotate(-5deg);
+    
+}
+
+.postit:nth-of-type(4), #prima .postit:nth-of-type(2) {
+    background: linear-gradient(to bottom, #cbfdcd, #9eb5a1);
+    transform: rotate(6deg);
+}
+
+#prima .postit:nth-of-type(3), #seconda .postit:nth-of-type(2) {
+    background: linear-gradient(to bottom, #cacafa, #8b8c9b);
+    transform: rotate(-6deg);
+}
+
+#prima .postit:hover, #seconda .postit:hover {
+    transform: rotate(0deg);
+    transform: scale(1.2)
+}

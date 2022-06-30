@@ -1,0 +1,31 @@
+main {
+    display: grid;
+    max-height: 160rem;
+}
+
+main article {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+main section {
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    margin-top: 3rem;
+    position: sticky;
+    bottom: 40px;
+    height: 450px;
+}
+
+main aside {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+aside, section {
+    margin-left: 1rem
+}
