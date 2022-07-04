@@ -1,0 +1,222 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+p {
+    line-height: 1.8;
+}
+h2 {
+    font-size: 2.2rem;
+}
+.bt-gradient {
+    background: linear-gradient(to right,#6cc1e2, #392f7a);
+    padding: 13px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+i {
+    font-size: 2rem;
+    color: #e42424;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+a {
+    text-decoration: none;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+/* MAIN */
+main .container section {
+    text-align: center;
+}
+/* section 1 */
+
+#background {
+    position: absolute;
+    height: 24rem;
+    width: 100%;
+    z-index: -1;
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main>section {
+    width: 100%;
+    height: 24rem;
+}
+main section h1 {
+    font-size: 2.5rem;
+    padding: 40px 0px 20px 20px;
+    font-weight: 400;
+    color: white;
+    width: 80%;
+    height: 120px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+}
+main>section p {
+    padding: 0 20px 20px 20px;
+    color: white;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+    
+}
+main>section a {
+    margin: 0px 0px 10px 20px;
+    animation-name: animazione;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+/* section 1 end */
+/* section 2 */
+#section2 h2 {
+    margin: 2rem 1rem 2rem 1rem;
+}
+#section2>p {
+    margin: 2rem 1rem;
+}
+#section2 .blocco h3 {
+    margin: 0.3rem 1rem 1rem 1rem;
+}
+/* .blocco prende anche i blocchi della section 4 */
+.blocco{
+    margin-bottom: 1.8rem;
+}
+.blocco p {
+    margin: 0 1.8rem;
+}
+/* .blocco prende anche i blocchi della section 4 */
+.pleft {
+    text-align: center;
+}
+
+
+/* section 2 end */
+/* section 3 */
+
+#section3 {
+    background-color: #0c0633;
+    height: 22.5rem;
+}
+#section3 h2, #section3 p {
+    color: white;
+}
+#section3 h2 {
+    margin: 4rem 2rem 1rem 2rem;
+}
+#section3 p {
+    margin: 1.5rem 1rem 2rem 1rem;
+}
+
+/* section 3 end */
+/* section 4 */
+#section4 img {
+    max-width: 90%;
+    margin: 1rem 0 0 0;
+}
+.blocco div{
+    margin: 0.8rem 0;
+}
+.blocco div *:not(p){
+    display: inline;
+}
+#section4 .blocco div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.blocco div i{
+    margin-right: 8px;
+}
+
+/* section 4 end */
+
+
+@keyframes animazione {
+    0% {
+        box-shadow: 0px 0px 0px black;
+
+    }
+    50% {
+        box-shadow: 0px 0px 50px black;
+    }
+    100% {
+        box-shadow: 0px 0px 0px black;
+    }
+}
+
+/* responsive */
+
+@media screen and (min-width:700px) {
+
+    #blockcontainer {
+        display: flex;
+        flex-direction: row;
+        margin: 0px 1.5rem;
+        
+    }
+    #blockcontainer .blocco {
+        margin: 0px;
+        text-align: center;
+    }
+    #blockcontainer .blocco p {
+        margin: 0px;
+        width: 100%;
+        text-align: left;
+    }
+    #section4 img {
+        float: left;
+        margin: 3rem 1.5rem;
+    }
+    #section4 .blocco {
+        text-align: left;
+    }
+    #section4 .blocco:nth-of-type(1) {
+        margin-top: 5rem;
+    }
+    #section4 .blocco div {
+        display: flex;
+        justify-content: left;
+    }
+    #section3 {
+        height: 19rem;
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+
+    .container {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+
+    }
+    #section2 {
+        width: 70%;
+    }
+    #section3 {
+        width: 100%;
+    }
+    #text {
+        width: 50%;
+    }
+    #section2>p {
+        margin: 0 18% 2rem 18%;
+    }
+    #blockcontainer .blocco {
+        margin: 0px 2rem;
+        height: 15rem;
+    }
+    #section4 {
+        width: 60%;
+    }
+    
+}

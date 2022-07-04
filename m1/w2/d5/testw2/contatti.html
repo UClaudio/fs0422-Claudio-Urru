@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Epicode School: contattaci per i corsi di Front End Developer.">
+  <title>Epicode - Contatti</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">  
+  <link rel="stylesheet" href="./assets/css/stile-contatti.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800;900&display=swap"rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/responsive-header-footer.css">
+  <script src="https://kit.fontawesome.com/fdc2838d36.js" crossorigin="anonymous"></script>  
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <div>
+        <img src="./assets/images/logo.png" alt="Logo EPICODE">
+        <input type="checkbox" id="burger-shower" hidden>
+        <label for="burger-shower" class="burger"><i class="fa-solid fa-ellipsis"></i></label>
+        <ul class="burger-menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./chi-siamo.html">Chi siamo</a></li>
+          <li><a href="./contatti.html">Contatti</a></li>
+          <li ><a href="#" class="bt-gradient">registrati</a></li>
+        </ul>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="./chi-siamo.html">Chi siamo</a>
+          <a href="./contatti.html">Contatti</a>
+          <a href="#" class="bt-gradient">registrati</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1>Contatti</h1>
+      <div id="blockcontainer">
+
+        <section id="section1">
+          <form action="#">
+            <input type="text" name="nome" placeholder="Nome e Cognome">
+            <input type="email" name="e-mail" placeholder="Indirizzo valido nome@casella.com">
+            <textarea name="textarea" rows="4" placeholder="Scrivi in breve il tuo messaggio"></textarea>
+            <button class="bt-gradient" >Invia il messaggio</button>
+          </form>
+        </section>
+        <section id="section2">
+          <div class="blocco">
+            <h2>Sede formativa</h2>
+            <p>Via appia 1</p>
+            <p>00100 Roma (RM)</p>
+          </div>
+          <div class="blocco">
+            <h2>Lavora con noi</h2>
+            <p>Per poterti candidare ad un ruolo da docente invia il tuo cv a <a href="mailto:job@epicode.school">job@epicode.school</a></p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer">
+        <div>
+          <h3>Chi siamo</h3>
+          <p>Epicode School nasce con l'obbiettivo di rivoluzionare la formazione in ambito tech.</p>
+        </div>
+        <div>
+          <h3>Ti piace ciò che vedi?</h3>
+          <h3>Condividilo con i tuoi amici!</h3>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div>
+          <h3>Iscriviti alla nostra newsletter</h3>
+          <form action="">
+            <input type="text">
+            <br>
+            <button class="bt-gradient">Va bene!</button>
+          </form>
+        </div>
+      </div>
+      <div>
+        <p>&copy; 2021 Epicode Web Developer school - Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</p>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+/* IMPOSTAZIONI GENERALI */
+
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+p {
+    line-height: 1.8;
+}
+h2 {
+    font-size: 2.2rem;
+}
+.bt-gradient {
+    background: linear-gradient(to right,#6cc1e2, #392f7a);
+    padding: 13px;
+    font-size: 1.5rem;
+    color: white;
+}
+i {
+    font-size: 2rem;
+    color: red;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ul {
+    list-style: none;
+    position: absolute;
+}
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header img, header i {
+    margin: 20px;
+}
+header i {
+    font-size: 2rem;
+    margin-top: 25px;
+}
+header input:checked {
+    
+}
+
+/* HEADER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HEADER 
+
+header {
+    width: 100%;
+    height:60px;
+    box-shadow: 1px 1px 2px #D3D3D3;
+}
+header i {
+    color: red;
+}
+header div {
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+header img {
+    height: 100%;
+}
+.burger-menu {
+    list-style: none;
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 74px;
+    
+}
+.burger-menu li {
+    line-height: 1.2;
+    text-align: center;
+    background-color: white;
+    font-size: 1.4rem;
+    margin-top: 0px;
+    padding: 5px;
+}
+#burger-shower:checked ~ .burger-menu {
+    display: inline;
+}
+.burger i {
+    margin-top: 30%;
+    font-size: 30px;
+}
+*/
+/* MAIN */
+
+/* section 1 
+
+main {
+    background-color: white;
+    height: 100vh;
+}
+main>section {
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 23rem;
+}
+main section h1 {
+    font-size: 2.5rem;
+    padding: 40px 0px 20px 20px;
+    font-weight: 400;
+    color: white;
+    width: 80%;
+    height: 120px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+}
+main>section p {
+    padding: 0 20px 30px 20px;
+    color: white;
+    text-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+main>section a {
+    margin: 0px 0px 10px 20px;
+}
+*/
+/* section 1 end */
+/* section 2 
+
+
+.container section:nth-of-type(1) {
+    text-align: center;
+}
+.container section:nth-of-type(1) h2{
+    margin: 1.5rem 10px;
+}
+.container section:nth-of-type(1)>p{
+    margin-bottom: 1rem;
+    width: 90%;
+    display: inline-block;
+}
+.blocco {
+    width: 90%;
+    display: inline-block;
+}
+.blocco h3 {
+    font-size: 1.4rem;
+}
+.blocco p {
+    font-size: 14px;
+    display: inline-block;
+    width: 90%;
+    
+}
+.blocco:nth-of-type(3) p {
+    margin-bottom: 2rem;
+    
+}
+#section1 .blocco:nth-of-type(2) i,#section1 .blocco:nth-of-type(3) i {
+    margin: 2rem 0px 0px 0px;
+}
+*/
+/* section 2 end */
+/* section 3 
+
+.container section:nth-of-type(2) {
+    background-color: #0c0633;
+    color: white;
+    text-align: center;
+    height: 22.5rem;
+    width: 100%;
+}
+.container section:nth-of-type(2) h2 {
+    padding: 4.5rem 0 1.5rem 0;
+}
+.container section:nth-of-type(2) p {
+    margin: 0 0 2rem 0;
+}
+
+*/
+/* section 3 end */
+/* section 4 
+
+.container section:nth-of-type(3) {
+    text-align: center;
+}
+.container section:nth-of-type(3) img {
+    max-width: 90%;
+    margin-top: 3rem;
+}
+
+.blocco div {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.blocco>div>i {
+    margin-right: 0.5rem;
+}
+#section4 h3 {
+    padding-top: 6px;
+}
+*/
+/* section 4 end */
+
+/* FOOTER 
+
+footer {
+    height: 200px;
+    background-color: #0c0633;
+}
+*/
+/* RESPONSIVE */

@@ -1,0 +1,158 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+p {
+    line-height: 1.8;
+}
+h2 {
+    font-size: 2.2rem;
+}
+.bt-gradient {
+    background: linear-gradient(to right,#6cc1e2, #392f7a);
+    padding: 13px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+i {
+    font-size: 2rem;
+    color: #e42424;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+a {
+    text-decoration: none;
+}
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 3rem 0 2rem 0;
+}
+
+
+/* main */
+#titolo {
+    margin: 0 1rem;
+}
+main img {
+    width: 90%;
+}
+.blocco {
+    margin: 2rem 0;
+}
+#section1 {
+    text-align: center;
+}
+#section1>p {
+    width: 85%;
+    display: inline-block;
+}
+.blocco p {
+    width: 90%;
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.bigrow:nth-child(even):not(#th) {
+    background-color: #d2dce7;
+}
+.column {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.column p:nth-of-type(1) {
+    font-weight: 600;
+    margin: 5px 0 0 5px;
+}
+.column p:nth-of-type(2) {
+    width: 50%;
+    margin-left: 3px;
+}
+#section2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#th {
+    display: none;
+}
+#th div{
+    display: flex;
+}
+
+
+
+
+
+@media screen and (min-width:700px) {
+    #section1 {
+        display: flex;
+        flex-direction: column;
+    }
+    #titolo {
+        margin: 0 1rem;
+    }
+    #blockcontainer {
+        display: flex;  
+    }
+    .column {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 32%;
+        display: inline-block;
+        vertical-align:middle;
+        text-align: center;
+    }
+    .table .column p {
+        width: 100%;
+    }
+    .column p:nth-last-of-type(2):not(#th p) {
+        display: none;
+    }
+    .bigrow {
+        flex-direction: row;
+        
+    }
+    #th {
+        background-color: #5f82a3;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    #th .column {
+        flex-direction: column;
+    }
+    #th p {
+        color: white;
+    }
+    #th p:nth-of-type(1) {
+        margin-top: 1rem;
+    }
+    .table {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    #titolo p {
+        margin: 0 10rem;
+    }
+    #blockcontainer {
+        margin: 2rem 10rem
+    }
+}
