@@ -1,17 +1,27 @@
 let tasti = document.querySelectorAll(".tasti")
 let risultato = document.querySelector("#risultato")
-let segni = document.querySelectorAll(".segni")
+
 
 
 function getInner (indice) {
-    carattere = tasti[indice].getAttribute("data-numero")
-
-       
-    risultato.value += tasti[indice].getAttribute("data-numero")
+    
+    let clicked = tasti[indice].getAttribute("data-numero")
+    let operatori = [".", "+", "-", "x", "/"]
 
     
+
+
+    if (operatori.filter((word) => word==clicked) == false  || clicked != risultato.value.slice(-1)) {
+
+        
+
+        risultato.value += clicked
+
+        
+    } 
+
     
-    return tasti[indice].getAttribute("data-numero")
+    return clicked
     
 }
 
