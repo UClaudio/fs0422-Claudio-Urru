@@ -67,6 +67,9 @@ function spendiConsapevolmente(){
     let spesa = manuBdg.value;
     
     //logica 
-    
+    if (sordi > 0) {
+        soldiRimasti.innerHTML -= spesa
+    }
+    console.log(sordi)
 }
 
