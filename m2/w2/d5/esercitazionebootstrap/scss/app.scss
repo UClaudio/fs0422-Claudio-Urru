@@ -1,8 +1,61 @@
-.icona {
-    overflow: hidden;
-    .anim{
-        height: 25px;
-        width: 100%;
-        background-color: red;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "_variable";
+@import "_function";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap');
+
+
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 3rem;
+    @media screen and (max-width: 420px){
+        font-size: 2rem;
+        
     }
-}   
+}
+
+
+.sect1 {
+    background-color: $bg-color;
+}
+
+.back {
+    background-color: $back-color;
+    border-left: 1px solid $azzurro;
+    border-right: 1px solid $azzurro;
+}
+.hov:hover {
+    .icona {
+        color: $azzurro;
+    }
+}
+.miobtn {
+    background-color: $azzurro;
+}
+.fsize {
+    
+    @media screen and (min-width: 1024px){
+        font-size: 1.4rem;
+        
+    }
+}
+.partner-icon {
+    font-size: 2rem;
+    @media screen and (min-width: 1024px){
+        font-size: 4rem;
+        
+    }
+}
+.color-adapt {
+    color: textcolor($back-color);
+}
+.car {
+    color: transparent;
+}

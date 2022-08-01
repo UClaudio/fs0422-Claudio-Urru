@@ -4,39 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eserccitazione</title>
-    <link rel="stylesheet" href=".\node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <title>Esercitazione</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
 </head>
 <body>
 
     <header>
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Fixed navbar</a>
+          <div class="container-fluid container-md">
+            <a class="navbar-brand" href="#">Lorem Ipsum</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarCollapse">
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                <ul class="navbar-nav mb-2 mb-md-0">
+            <div class="collapse navbar-collapse d-flex-md justify-content-end" id="navbarCollapse">
+                
+                <ul class="navbar-nav mb-2 mb-md-0 d-flex align-items-center">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Chi Siamo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="#">Contatti</a>
                     </li>
-                    <i class="nav-item bi bi-linkedin text-light fs-4 mx-2 icona"><div class="anim"></div></i>
-                    <i class="nav-item bi bi-instagram light text-light fs-4 mx-2 icona"><div class="anim"></div></i>
-                    <i class="nav-item bi bi-facebook light text-light fs-4 mx-2 icona"><div class="anim"></div></i>
+                    <ul class="nav-item d-flex p-0">
+                      <li class="nav-item hov"><a href="#" class="nav-link">
+                        <i class="bi bi-linkedin  fs-4 mx-2 icona"></i>
+                      </a></li>
+                      <li class="nav-item hov"><a href="#" class="nav-link">
+                        <i class="bi bi-instagram light  fs-4 mx-2 icona"></i>
+                        </a></li>
+                      <li class="nav-item hov"><a href="#" class="nav-link">
+                        <i class="bi bi-facebook light  fs-4 mx-2 icona"></i>
+                      </a></li>
+
+                    </ul>
+                    
+                    
+                    
                 </ul>
            
             </div>
@@ -45,19 +53,50 @@
       </header>
       
       <!-- Begin page content -->
-      <main class="flex-shrink-0 mt-5">
-        <div class="container pt-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequatur vel incidunt repellat, ea debitis voluptatibus obcaecati? Ab perferendis ducimus ullam vel esse vitae atque praesentium deserunt aspernatur. Ad, molestiae.
-            Reprehenderit sunt porro, eveniet reiciendis est voluptate sapiente. Quis incidunt unde minima consectetur reiciendis dolores iure natus, nesciunt assumenda minus adipisci. Totam, aspernatur ducimus ea quibusdam doloremque maxime alias ipsam.
-            Possimus sapiente sit, illum distinctio modi provident accusantium perferendis commodi vero amet delectus tempora beatae magni deleniti. Soluta alias consectetur voluptate non quia, ducimus, quidem pariatur fuga facere, possimus perspiciatis!
-            Est distinctio blanditiis repellendus, quasi aliquam quidem hic earum obcaecati ipsum illo sapiente quam qui doloremque eius eveniet illum consectetur aspernatur non. Quos eum aut commodi maxime aliquam consectetur! Minima?
-            Eum unde ratione et illo enim necessitatibus quia. Commodi voluptate animi placeat, dolores fugit, impedit sint blanditiis asperiores quae nihil nostrum porro laudantium obcaecati perferendis ducimus, mollitia esse explicabo voluptatum?</p>
+      <main class="mt-4 mb-5 pb-5">
+        <div class="container-fluid pt-4 sect1">
+          <div class="container-fluid container-md text-center text-sm-start back">
+            <h1 class="pt-5 m-0 px-sm-5 color-adapt">Lorem ipsum dolor sit amet</h1>
+            <p class="p-5 pb-3 color-adapt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum amet magnam placeat eius nam.</p>
+            <a href="#" class="btn miobtn mb-5 mx-5 fs-5 px-sm-5 py-3">Chiedi info</a>
+            <div class="row d-flex flex-column flex-md-row px-md-5">
+              <div class="col-12 text-center col-md-4">
+                <i class="bi bi-chat-dots partner-icon color-adapt"></i>
+                <p class="mx-5 mx-md-0 color-adapt fsize">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa iure</p>
+              </div>
+              <div class="col-12 text-center col-md-4">
+                <i class="bi bi-building partner-icon color-adapt"></i>
+                <p class="mx-5 mx-md-0 color-adapt fsize">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa iure</p>
+              </div>
+              <div class="col-12 text-center col-md-4">
+                <i class="bi bi-award partner-icon color-adapt"></i>
+                <p class="mx-5 mx-md-0 color-adapt fsize">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa iure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./images/picsum1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/picsum2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./images/picsum3.jpg" alt="Third slide">
+              </div>
+            </div>
+          </div>
+          
         </div>
       </main>
       
-      <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-
+      <footer class="footer mt-auto py-3 bg-light fixed-bottom">
+        <div class="container text-center">
+          &copy;copy 2022.
         </div>
       </footer>
       
