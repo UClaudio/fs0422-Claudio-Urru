@@ -9,7 +9,6 @@ class generateUsers {
         this.target = document.querySelector(targetHTML);
         this.users = usersJson;
         this.generateAll(this.users)
-        this.table = ""
         
     }
 
@@ -24,10 +23,8 @@ class generateUsers {
                 userList.push(Object.entries(utente))
             }
             this.users = userList
-            this.table = this.generateTable()
+            this.generateTable()
         })
-
-
         
     }
 
