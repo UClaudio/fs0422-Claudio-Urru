@@ -1,0 +1,57 @@
+body {
+    background-color: #f8f9fa;
+}
+.main-container {
+    height: 100vh;
+}
+.posts-container {
+    height: 60%;
+    background-color: lightgray;
+    border-radius: 2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.post {
+    background-color: rgb(132, 173, 115);
+    border-radius: 1.5rem;
+
+    width: fit-content;
+}
+.messaggio {
+    overflow-x: auto;
+}
+.nome {
+    font-weight: bold;
+    font-size: 18px;
+}
+.data {
+    font-size: 14px;
+}
+/*
+.nome, .data, .messaggio {
+    margin: 1.5rem;
+    width: fit-content;
+}
+.nome {
+    font-weight: bold;
+    display: inline;
+}
+.data {
+    display: inline;
+}
+.messaggio {
+    display: block;
+}
+*/
+.ml16 {
+    color: #402d2d;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 0.11em;
+
+  }
+  
+  .ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }

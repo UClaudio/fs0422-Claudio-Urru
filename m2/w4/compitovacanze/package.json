@@ -1,0 +1,11 @@
+{
+  "name": "eserciziovacanze",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "backend": "json-server --watch posts.json"
+  },
+  "author": "",
+  "license": "ISC"
+}
