@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Post } from 'src/app/models/post';
 
 @Component({
   selector: 'app-home',
@@ -12,4 +13,23 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  newPost:Post = new Post('','');
+
+  addNewPost():void{
+    let postCopy = Object.assign({}, this.newPost)
+
+    let option = {
+      method: "POST",
+      body: JSON.stringify(postCopy),
+      headers: {
+          "content-type": "application/json"
+      }
+    }
+
+    fetch('http://localhost:3000/posts', option)
+    .then(res => res.json())
+    .then(() => {
+      this.newPost = new Post('', '')
+    })
+  }
 }

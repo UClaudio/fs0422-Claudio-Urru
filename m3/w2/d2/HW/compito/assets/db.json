@@ -11,6 +11,18 @@
       "body": "lorem1",
       "title": "post2",
       "active": false
+    },
+    {
+      "body": "lorem3",
+      "title": "post3",
+      "active": true,
+      "id": 2
+    },
+    {
+      "body": "sssssssssssssssssssss",
+      "title": "sdfsdf",
+      "active": true,
+      "id": 3
     }
   ]
 }

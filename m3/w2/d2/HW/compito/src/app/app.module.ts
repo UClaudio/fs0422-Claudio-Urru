@@ -7,6 +7,7 @@ import { NavbarComponent } from './main/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ActivePostsComponent } from './pages/active-posts/active-posts.component';
 import { InactivePostsComponent } from './pages/inactive-posts/inactive-posts.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InactivePostsComponent } from './pages/inactive-posts/inactive-posts.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
