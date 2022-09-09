@@ -1,0 +1,16 @@
+.navbar {
+    background-color: rgb(5, 4, 61);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .nav-link {
+            margin: 0 1rem;
+            color: black;
+        }
+    }
+}

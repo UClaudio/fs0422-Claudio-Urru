@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+	text-decoration: none;
+	background-color: #f8f9fa;
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+.title {
+	font-size: 2rem;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+	.title {
+		margin-top: 7rem;
+		font-size: 2rem;
+	}
+	
+    .loading-container {
+        display: flex;
+		margin-top: 5rem;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-size: 1.5rem;
+        }
+        
+        .loading-animation {
+            height: 50px;
+            width: 50px;
+            margin: 2rem 0;
+            animation-name: animazione;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            position: relative;
+
+            .loading-content {
+                position: absolute;
+                
+                height: 15px;
+                width: 15px;
+                background-color: blue;
+                border-radius: 1rem;
+                box-shadow: 0 0 2px 1px rgb(6, 6, 136);
+                
+            }
+            .loading-content:nth-of-type(1){
+                left: 17px;
+            }
+            .loading-content:nth-of-type(2){
+                left: 17px;
+                bottom: 0;
+            }
+            .loading-content:nth-of-type(3){
+                bottom: 17px;
+                right: 0px;
+            }
+            .loading-content:nth-of-type(4){
+                bottom: 17px;
+            }
+        
+    	}
+    }
+    .post-container {
+        margin-top: 2rem;
+		padding: 0.5rem 1rem;
+		border-radius: 20px;
+		box-shadow: 0 0 7px 1px gray;
+		display: flex;
+		align-items: center;
+		background-color: #f8f9fa;
+		p {
+			margin-right: 0.7rem;
+		}
+		.checkbox {
+			height: 18px;
+			width: 18px;
+			background-color: rgba(189, 187, 187, 0.4);
+			border-radius: 3px;
+			position: relative;
+			z-index: 20;
+
+			
+			
+			.checkbox-component {
+				position: absolute;
+				background-color: rgb(6, 6, 136);
+				border-radius: 3px;
+			}
+			.checkbox-component:nth-of-type(1) {
+				transform: rotateZ(35deg);
+				right: 5px;
+				height: 14px;
+				width: 3px;
+				top: 2px;
+			}
+			.checkbox-component:nth-of-type(2) {
+				height: 6px;
+				width: 3px;
+				bottom: 4px;
+				left: 5px;
+				transform: rotateZ(-30deg);
+			}
+		}
+		.checkbox:hover {
+			background-color: rgba(189, 187, 187, 0.9);
+		}
+		
+    }
+
+}
+
+
+  
+  @keyframes animazione {
+    0%   {transform: rotateZ(0deg);}
+    100%   {transform: rotateZ(360deg);}
+   
+  }
+

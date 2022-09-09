@@ -1,0 +1,25 @@
+<div class="main-container">
+    <h1 class="title">Crea to do</h1>
+    <div class="input-container">
+        <input (keyup.enter)="addTodo()" type="text" [(ngModel)]="inputValue" name="todoInput" id="todoInput" placeholder="Enter Todo">
+        <button (click)="addTodo()"class="input-btn">salva</button>
+    </div>
+    <div class="posts-container">
+        <div *ngIf="todos.length == 0" class="loading-container">
+            <div class="loading-animation">
+                <div class="loading-content"></div>
+                <div class="loading-content"></div>
+                <div class="loading-content"></div>
+                <div class="loading-content"></div>
+            </div>
+            <p>loading Todos....</p>
+        </div>
+        <div *ngFor="let todo of todos" class="post-container">
+            <p>{{ todo.title }}</p>
+            <div (click)="doTodo(todo)" class="checkbox">
+                <div class="checkbox-component"></div>
+                <div class="checkbox-component"></div>
+            </div>
+        </div>
+    </div>
+</div>
