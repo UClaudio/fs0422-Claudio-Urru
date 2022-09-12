@@ -1,0 +1,23 @@
+.navbar {
+    background-color: rgb(5, 4, 61);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 0px 3px 1px rgb(5, 4, 61);
+    ul {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+
+        .nav-link {
+            margin: 0 1rem;
+            color: black;
+        }
+    }
+}
+
+.btn:hover {
+    background-color: rgb(167, 167, 167);
+}

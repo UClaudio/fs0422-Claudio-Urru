@@ -1,0 +1,25 @@
+<div class="main-container">
+    <div class="title-container">
+        <h1 class="title">To do completati</h1>
+
+    </div>
+    <div class="posts-container">
+        <div class="bg"></div>
+        <div *ngIf="!doneTodos.length" class="loading-container">
+            <div class="loading-animation">
+                <div class="loading-content"></div>
+                <div class="loading-content"></div>
+                <div class="loading-content"></div>
+                <div class="loading-content"></div>
+            </div>
+            <p>loading Todos....</p>
+        </div>
+        <div *ngFor="let todo of doneTodos" class="post-container">
+            <p>{{ todo.title }}</p>
+            <div (click)="removeTodo(todo.id)"  class="checkbox">
+                <div class="checkbox-component"></div>
+                <div class="checkbox-component"></div>
+            </div>
+        </div>
+    </div>
+</div>

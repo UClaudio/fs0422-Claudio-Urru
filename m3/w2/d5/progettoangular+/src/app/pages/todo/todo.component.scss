@@ -1,0 +1,73 @@
+
+.input-container {
+    text-align: center;
+    background-color: #f8f9fa;
+
+}
+#todoInput {
+    margin-top: 2rem;
+    border: none;
+    transition: 0.5s;
+    box-shadow: 0 0 5px 1px gray;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    outline: none;
+    margin-bottom: 5%;
+    
+}
+#todoInput:focus {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.input-btn {
+    border: none;
+    background-color: #f8f9fa;
+    margin-left: 0.5rem;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    border: 0.5px solid gray;
+    &:hover {
+        background-color: #9dc6f0;
+    }
+}
+
+.title {
+    padding-top: 4rem;
+    background-color: #f8f9fa;
+    
+}
+.main-container {
+    text-align: center;
+    height: 100vh;
+}
+.checkbox-component {
+    position: absolute;
+    background-color: rgb(6, 6, 136);
+    border-radius: 3px;
+}
+.checkbox-component:nth-of-type(1) {
+    transform: rotateZ(35deg);
+    height: 1.4rem;
+    width: 3px;
+    right: 0.5rem;
+    top: 0.1rem;
+}
+.checkbox-component:nth-of-type(2) {
+    height: 0.6rem;
+    width: 3px;
+    bottom: 4px;
+    left: 7px;
+    transform: rotateZ(-30deg);
+}
+
+.posts-container {
+    max-height: 67%;
+}
+
+#modify-btn {
+    margin-left: 0.2rem;
+    p {
+        font-size: 22px;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+}
