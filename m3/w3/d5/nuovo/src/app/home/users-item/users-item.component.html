@@ -1,0 +1,9 @@
+<li class="card" style="width:400px">
+    <div class="card-body">
+        <h4 class="card-title ps-3 pt-3 mb-5 row">{{user.name}}</h4>
+        <div class="container btn-container d-flex justify-content-between">
+            <a [routerLink]="['home/users/details/id:user.id']" class="btn btn-primary">See Profile</a>
+            <a (click)="deleteUser(user)" class="btn btn-danger">Elimina</a>
+        </div>
+    </div>
+</li>
