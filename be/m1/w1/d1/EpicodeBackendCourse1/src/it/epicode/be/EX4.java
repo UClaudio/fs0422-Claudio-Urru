@@ -6,8 +6,6 @@ public class EX4 {
 		System.out.println("Perimetro rettangolo: " + perimetroRettangolo(2.5f, 7.5f));
 		
 		System.out.println(pariDispari(2));
-		
-		System.out.println(pariDispariPro(3));
 
 		System.out.println(areaTriangolo(2.5f, 6.5f, 8.0f));
 	}
@@ -20,9 +18,6 @@ public class EX4 {
 		return n % 2;
 	}
 	
-	public static String pariDispariPro(int n) {
-		return n % 2 == 0 ? "Pari" : "Dispari";
-	}
 	
 	public static float areaTriangolo(float l1, float l2, float l3) {
 		float p = (l1 + l2 + l3)/2;
