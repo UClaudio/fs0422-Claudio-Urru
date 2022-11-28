@@ -29,7 +29,7 @@ export class AuthService {
 
   constructor(private http:HttpClient) { }
 
-  apiUrl:string = 'http://localhost:3000'
+  apiUrl:string = 'http://localhost:5432'
 
   register(registerData:IRegister){
     return this.http.post<AuthResponse>(this.apiUrl+'/register', registerData)

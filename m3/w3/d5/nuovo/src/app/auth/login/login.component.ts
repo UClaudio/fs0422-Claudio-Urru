@@ -24,9 +24,11 @@ export class LoginComponent implements OnInit {
     })
   }
   login(){
+    
     this.auth.login(this.form.value)
     .subscribe(res => {
       this.auth.saveAccessData(res)
+      console.log("si")
       this.router.navigate(['/home'])
     })
   }

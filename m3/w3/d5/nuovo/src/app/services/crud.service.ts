@@ -12,7 +12,7 @@ export class CRUDService {
   constructor(private http:HttpClient) { }
 
 
-  apiUrl:string = 'http://localhost:3000/'
+  apiUrl:string = 'http://localhost:5432/'
 
   getAllUsers():Observable<User[]> {
     return this.http.get<User[]>(this.apiUrl + "users")
